@@ -14,25 +14,17 @@ API for user events version one - Test
 		[Note] TEXT NULL
 	)
 
-# DataBase Troubleshooting 
+# Clone Project
+Open Visual Studio
 
-Right click on App_Data add -> New Item -> SQl Server DataBase and name it EventDBv1
-Open Server Exsplore -> right click on Table and copy the database schema above.
-Click the upload arrow to save changes to the Table
-
-### Troubleshooting Model
-
-Right click Model -> add -> new item -> data -> ADO.Net entity Model and name it Event and the select Add button.
-Choose EF disnger from database -> edit WebCofig to EventDB at end of dialoge box the click next.
-Select tables and click next. 
-
+In the Solution Explorer under Local Git Repositores enter the git URI "https://github.com/AllenHiggins/C_API" and select clone
+Select the project solution. The project files should now be visible for use. 
 
 # Run API 
 
 Press the play icon in Visual Studio or f5. When the web browser opens close it as the xml is to hevey to run smootly.
 Leave the build running.
 Use PostMan or any other web API tool to issue request to the endpoints noted below. 
-
 
 # EndPoints
 
@@ -71,3 +63,15 @@ api/v1/Events/Id -> updates the existing event (Response Code: 200)
 
 ### DELETE
 api/v1/Events/Id -> deletes the identified event (Response Code: 200)
+
+# DataBase Troubleshooting 
+
+Right click on App_Data add -> New Item -> SQl Server DataBase and name it EventDBv1
+Open Server Exsplore -> right click on Table and copy the database schema above.
+Click the upload arrow to save changes to the Table
+
+### Troubleshooting Model
+
+Right click Model -> add -> new item -> data -> ADO.Net entity Model and name it Event and the select Add button.
+Choose EF disnger from database -> edit WebCofig to EventDB at end of dialoge box the click next.
+Select tables and click next. 
