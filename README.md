@@ -51,6 +51,16 @@ api/v1/Events?Category=weight training -> returns a list of all events of a choo
 
 api/v1/Events/Id -> returns an event choosen by ID (Response Code: 200)
 
+#### JSON POST/PUT
+	{
+		"Note": string,
+		"Categorey": String,
+		"StartDate": Date,
+		"EndDate": Date,
+		"StartTime": Time,
+		"EndTime": Time
+	}
+
 
 ### POST 
 api/v1/Events -> Creates a new event (Response Code: 201)
